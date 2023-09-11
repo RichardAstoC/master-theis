@@ -1,0 +1,124 @@
+Starting preprocessing of the model file ...
+Found 20 equation(s).
+Evaluating expressions...done
+Computing static model derivatives (order 1).
+Computing dynamic model derivatives (order 1).
+Processing outputs ...
+done
+Preprocessing completed.
+
+STEADY-STATE RESULTS:
+
+Ft  		 0.440054
+ht  		 1.02674
+xi  		 1.17714
+xf  		 1.73862
+xt  		 1.65064
+xt1 		 1.3942
+x1  		 1.16189
+pt  		 4.90207
+mt  		 0.685462
+Tt  		 0.195392
+lt  		 0
+qt  		 1.06538
+kt  		 0.43538
+it  		 0.0833961
+x2  		 1.19296
+ct  		 0.63
+At  		 1
+at  		 0
+ft  		 1.87242
+rt  		 0.0612491
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+
+       8.587e-18       -8.587e-18                0
+       5.915e-16        5.915e-16                0
+            0.95             0.95                0
+            0.95             0.95                0
+          0.9574           0.9574                0
+
+
+There are 0 eigenvalue(s) larger than 1 in modulus 
+for 0 forward-looking variable(s)
+
+The rank condition is verified.
+
+
+MODEL SUMMARY
+
+  Number of variables:         20
+  Number of stochastic shocks: 2
+  Number of state variables:   5
+  Number of jumpers:           0
+  Number of static variables:  15
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+Variables         e_a       e_f
+e_a          0.000010  0.000000
+e_f          0.000000  0.000010
+
+POLICY AND TRANSITION FUNCTIONS
+                                  pt              ct              kt              x1              x2             xt1              it              mt
+Constant                    4.902067        0.630000        0.435380        1.161894        1.192962        1.394205        0.083396        0.685462
+pt(-1)                     -0.476510        0.094878        0.065569               0               0               0               0        0.036600
+ct(-1)                     -7.415506        1.476510        1.020387               0               0               0               0        0.569575
+at(-1)                    -16.305429        1.047764        2.747011        1.070736       -1.374782        3.493584       -6.273284       -2.231548
+ft(-1)                      6.477362       -0.416226       -1.160291       -0.298129        0.776435       -1.341515        2.744803        0.604938
+rt(-1)                     -2.201071        0.438258        0.302871               0               0               0               0        0.169061
+e_a                       -17.163610        1.102910        2.891590        1.127091       -1.447139        3.677457       -6.603456       -2.348998
+e_f                         6.818276       -0.438133       -1.221359       -0.313820        0.817300       -1.412121        2.889266        0.636776
+
+
+MOMENTS OF SIMULATED VARIABLES
+VARIABLE              MEAN       STD. DEV.        VARIANCE        SKEWNESS        KURTOSIS
+pt                4.878789        0.130938        0.017145        0.122722       -0.340411
+ct                0.626993        0.009567        0.000092        0.481783       -0.102153
+kt                0.440527        0.022737        0.000517       -0.162606       -0.351786
+x1                1.165257        0.010457        0.000109       -0.059043       -0.398169
+x2                1.187535        0.013753        0.000189        0.305961       -0.302437
+xt1               1.406217        0.034052        0.001160       -0.174242       -0.382339
+it                0.060881        0.061387        0.003768        0.223358       -0.362305
+mt                0.675934        0.024831        0.000617        0.016967       -0.349734
+
+
+CORRELATION OF SIMULATED VARIABLES
+VARIABLE        pt      ct      kt      x1      x2     xt1      it      mt
+pt          1.0000 -0.6240 -0.9967 -0.9286  0.9241 -0.9371  0.9367  0.8707
+ct         -0.6240  1.0000  0.5632  0.3072 -0.3114  0.3121 -0.3131 -0.1703
+kt         -0.9967  0.5632  1.0000  0.9477 -0.9521  0.9597 -0.9611 -0.8999
+x1         -0.9286  0.3072  0.9477  1.0000 -0.9541  0.9936 -0.9854 -0.9900
+x2          0.9241 -0.3114 -0.9521 -0.9541  1.0000 -0.9819  0.9911  0.9458
+xt1        -0.9371  0.3121  0.9597  0.9936 -0.9819  1.0000 -0.9984 -0.9841
+it          0.9367 -0.3131 -0.9611 -0.9854  0.9911 -0.9984  1.0000  0.9763
+mt          0.8707 -0.1703 -0.8999 -0.9900  0.9458 -0.9841  0.9763  1.0000
+
+
+AUTOCORRELATION OF SIMULATED VARIABLES
+VARIABLE         1       2       3       4       5
+pt          0.8994  0.7999  0.7161  0.6332  0.5599
+ct          0.9176  0.8358  0.7665  0.6973  0.6353
+kt          0.9041  0.8094  0.7295  0.6503  0.5802
+x1          0.9363  0.8726  0.8179  0.7639  0.7148
+x2          0.9281  0.8571  0.7970  0.7359  0.6818
+xt1         0.9328  0.8660  0.8088  0.7518  0.7006
+it          0.9312  0.8629  0.8047  0.7464  0.6942
+mt          0.9512  0.9020  0.8592  0.8166  0.7773
+
+
+
+VARIANCE DECOMPOSITION SIMULATING ONE SHOCK AT A TIME (in percent)
+                    e_a               e_f  Tot. lin. contr.
+pt               103.20             16.55            119.75
+ct               105.48             31.92            137.41
+kt               104.63             18.83            123.46
+x1               113.49              8.96            122.46
+x2               108.15             35.15            143.30
+xt1              113.93             17.12            131.05
+it               113.03             22.05            135.08
+mt               118.17             11.23            129.40
+Note: numbers do not add up to 100 due to non-zero correlation of simulated shocks in small samples
+
+Total computing time : 0h00m01s
